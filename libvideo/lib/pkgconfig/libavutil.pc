@@ -1,0 +1,14 @@
+prefix=/f/dev/videoForensic/ffmpeg/ffmpeg_install
+exec_prefix=${prefix}
+libdir=/f/dev/videoForensic/ffmpeg/ffmpeg_install/lib
+includedir=/f/dev/videoForensic/ffmpeg/ffmpeg_install/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 58.30.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm -luser32 -lbcrypt -latomic
+Libs.private: 
+Cflags: -I${includedir}

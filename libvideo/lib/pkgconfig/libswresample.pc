@@ -1,0 +1,14 @@
+prefix=/f/dev/videoForensic/ffmpeg/ffmpeg_install
+exec_prefix=${prefix}
+libdir=/f/dev/videoForensic/ffmpeg/ffmpeg_install/lib
+includedir=/f/dev/videoForensic/ffmpeg/ffmpeg_install/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 4.13.100
+Requires: libavutil >= 58.30.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm -latomic
+Libs.private: 
+Cflags: -I${includedir}
